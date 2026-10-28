@@ -1,6 +1,6 @@
 # HUBAUDIT
 
-- [GitHub Repository](https://github.com/Hubaudit)
+- [GitHub Repository](https://github.com/Hubaudit/HubAudit)
 - [Paper](./assets/HubAudit-Paper.pdf)
 - [Supplementary Material](./assets/HubAudit-Paper-Suplementary.pdf)
 - [Website](https://hubaudit.github.io/)
@@ -32,7 +32,7 @@ Other artifacts, including the scanner outputs, flagged-file lists and other res
 To reproduce HUBAUDIT, follow the repositories in this order (Steps):
 
 1. **Preliminary experiment** - counts the file formats in the repositories of the five task categories on HF, which determines the artifact extensions collected for scanning: [Preliminary-Experiment](https://github.com/HubAudit/Preliminary-Experiment).
-2. **Scanner pipeline** - crawls the repositories, and scans each one with the six SOTA scanners. We  collects HF's security report (VirusTotal and ClamAV) for each repository: [HubAudit](https://github.com/HubAudit/HubAudit).
+2. **HubAudit SOTA Scanner ** - crawls the repositories, and scans each one with the six SOTA scanners. We  collects HF's security report (VirusTotal and ClamAV) for each repository: [HubAudit](https://github.com/HubAudit/HubAudit).
 3. **Analysis** - It runs `experiments_and_results/get_results.ipynb` on the scan databases, then you also find the script for the LLM review of the suppressed clusters (`LLM/`), both in the same repository.
 
 The Preliminary experiment scanner outputs are on Zenodo (see above), so step 1 can be run without re-scanning.
